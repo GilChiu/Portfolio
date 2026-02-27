@@ -97,6 +97,15 @@ export default function ContactPage() {
           >
             View Upwork Profile
           </a>
+
+          <a
+            href="https://github.com/GilChiu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-foreground/20 px-6 py-3 text-sm font-medium transition hover:bg-foreground/5"
+          >
+            GitHub
+          </a>
         </motion.div>
       </motion.main>
     </div>
