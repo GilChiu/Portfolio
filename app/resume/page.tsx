@@ -36,6 +36,54 @@ export default function ResumePage() {
         <h2 className="text-2xl font-semibold">Work Experience</h2>
         <article className="rounded-2xl border border-foreground/15 p-5">
           <div className="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h3 className="text-xl font-medium">Creator-Fan Commerce Backend (Myschool OPC)</h3>
+              <p className="mt-0.5 text-xs text-foreground/50">Mar 9, 2026 – Present</p>
+            </div>
+            <p className="text-sm text-foreground/70">Backend Engineer</p>
+          </div>
+          <ul className="mt-4 space-y-2 leading-7 text-foreground/80">
+            <li>
+              Built and maintained backend infrastructure for a creator-fan commerce platform using NestJS, PostgreSQL
+              with Prisma, and Vendure headless commerce.
+            </li>
+            <li>
+              Designed and implemented a product and catalog system with Vendure sync, supporting physical/digital
+              products, variants, pricing, and per-creator visibility controls backed by a normalized PostgreSQL schema.
+            </li>
+            <li>
+              Engineered auto-provisioning of creator commerce channels in Vendure on creator onboarding, including
+              idempotent retry logic for failed channel provisioning.
+            </li>
+            <li>
+              Built a consumables commerce system covering subscriptions, frequency options, avatar pairings, and
+              supplier catalog, with full CRUD, status lifecycle management, and a metrics/list API for creator dashboards.
+            </li>
+            <li>
+              Integrated S3-compatible object storage for product and AI-generated images using pre-signed PUT URLs,
+              enabling direct client uploads with backend confirmation.
+            </li>
+            <li>
+              Implemented a catalog product ingestion pipeline mapping supplier SKUs, colors, and sizes into a
+              creator-assignable product catalog.
+            </li>
+            <li>
+              Developed a limited-edition storefront API supporting vault open/close windows, drop-gated access, and
+              tier-based product restrictions.
+            </li>
+            <li>
+              Built a suggested creators endpoint for fan discovery, aggregating creator profiles with subscription and
+              product metadata.
+            </li>
+            <li>
+              Created an onboarding AI image generation pipeline using BullMQ for async job processing, with status
+              tracking and SSE-based progress streaming.
+            </li>
+          </ul>
+        </article>
+
+        <article className="rounded-2xl border border-foreground/15 p-5">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <h3 className="text-xl font-medium">Accounting Operations Platform (US Client)</h3>
             <p className="text-sm text-foreground/70">Full-Stack Engineer</p>
           </div>
